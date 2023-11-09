@@ -21,7 +21,6 @@ export async function createNote(note: Partial<Note>): Promise<Note> {
     throw new Error("note date & text required");
   }
 
-  
   await db.insert(notesSchema).values({
     text: note.text,
     date: note.date,
