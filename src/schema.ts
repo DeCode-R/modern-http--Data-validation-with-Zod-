@@ -14,7 +14,7 @@ export const updateNoteRequestSchema =z.object({
 });
 
 export const createNoteRequestSchema =z.object({
-    text: z.string().min(5).max(5000).optional(),
+    text: z.string().min(5).max(5000),
     date: z.number().int().min(Date.now()).optional(),
 });
 
