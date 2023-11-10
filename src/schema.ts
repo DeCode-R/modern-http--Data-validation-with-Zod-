@@ -1,7 +1,6 @@
 import {z} from "zod";
 import { notesSchema } from "./notes";
 
-
 export const getSingleNoteSchema = z
 .string()
 .max(15)
@@ -19,4 +18,3 @@ export const createNoteRequestSchema =z.object({
 });
 
 export const notes = notesSchema;
-
